@@ -1,0 +1,9 @@
+ExpiresActive On
+ExpiresByType text/html A60
+ExpiresByType image/x-icon A86400
+ExpiresByType image/gif A3600
+ExpiresByType image/png A3600
+ExpiresByType image/jpg A3600
+ExpiresByType image/jpeg A3600
+ExpiresByType text/css A3600
+ExpiresByType application/javascript A3600
