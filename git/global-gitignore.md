@@ -1,10 +1,21 @@
 # Set up Global .gitignore
 
-1. ```git config --global core.excludesfile ~/.gitignore_global```
+1.
 
-2. ``` nano ~/.gitignore_global```
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
 
-3. ```# Compiled source #
+2.
+
+```
+nano ~/.gitignore_global
+```
+
+3. 
+
+```
+# Compiled source #
 ###################
 *.com
 *.class
