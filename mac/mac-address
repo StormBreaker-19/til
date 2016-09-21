@@ -1,7 +1,7 @@
 ## Find your mac address
 
-`ifconfig en0 | grep ether`
+``ifconfig en0 | grep ether``
 
 ## Change (Spoof) your mac address
 
-`sudo ifconfig en0 ether 11:22:33:44:55:66`
+``sudo ifconfig en0 ether 11:22:33:44:55:66``
