@@ -1,0 +1,15 @@
+{
+    "profiles": [
+        {
+            "name": "Desktop",
+            "selected": true,
+            "simple_modifications": {
+                "caps_lock": "delete_or_backspace",
+                "left_alt": "left_command",
+                "left_command": "left_alt",
+                "right_alt": "right_command",
+                "right_command": "right_alt"
+            }
+        }
+    ]
+}
