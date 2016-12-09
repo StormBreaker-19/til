@@ -1,0 +1,5 @@
+# Merge PDFs from CLI
+
+```
+"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o /path/to/merged.pdf /path/to/*.pdf
+```
