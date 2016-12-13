@@ -1,0 +1,4 @@
+```
+CREATE USER '[username]'@'%' IDENTIFIED BY '[password]';
+GRANT ALL on [databasename].* to '[username]'@'%';
+```
