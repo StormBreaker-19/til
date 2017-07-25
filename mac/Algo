@@ -1,0 +1,5 @@
+# Remove Google Analytics from Block List
+
+`nano /var/lib/dnsmasq/block.hosts`
+
+# Remove "analytics.google.com"
