@@ -6,8 +6,13 @@ homeassistant:
   unit_system: metric
   time_zone: Australia/Melbourne
 
-# Show links to resources in log and frontend
-introduction:
+  customize:
+    media_player.bathroom:
+      entity_picture: ''
+    media_player.deck:
+      entity_picture: ''
+    media_player.lounge:
+      entity_picture: ''
 
 # Enables the frontend
 frontend:
@@ -17,23 +22,9 @@ config:
 
 http:
   api_password: !secret http_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
 
 # Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
-
-# Discover some devices automatically
-discovery:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -48,25 +39,25 @@ sun:
 sensor:
   - platform: yr
 
-# Text to speech
-tts:
-  - platform: google
-
 light:
   - platform: lifx
-  
+
 media_player:
   - platform: sonos
   - platform: roku
-  
+
 nest:
   client_id: !secret nest_client_id
-  client_secret: !nest_client_secret
+  client_secret: !secret nest_client_secret
+
+wemo:
 
 camera:
   - platform: uvc
     nvr: !secret unifi_ip
     key: !secret unifi_api
+    port: !secret unifi_port
+    password: !secret unifi_password
 
 group: !include groups.yaml
 automation: !include automations.yaml
