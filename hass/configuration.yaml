@@ -57,10 +57,16 @@ light:
   
 media_player:
   - platform: sonos
+  - platform: roku
   
 nest:
   client_id: !secret nest_client_id
   client_secret: !nest_client_secret
+
+camera:
+  - platform: uvc
+    nvr: !secret unifi_ip
+    key: !secret unifi_api
 
 group: !include groups.yaml
 automation: !include automations.yaml
