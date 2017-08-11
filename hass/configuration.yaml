@@ -54,6 +54,13 @@ tts:
 
 light:
   - platform: lifx
+  
+media_player:
+  - platform: sonos
+  
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !nest_client_secret
 
 group: !include groups.yaml
 automation: !include automations.yaml
