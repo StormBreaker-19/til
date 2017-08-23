@@ -58,6 +58,9 @@ camera:
     key: !secret unifi_api
     port: !secret unifi_port
     password: !secret unifi_password
+    
+zwave:
+  usb_path: /dev/shm
 
 group: !include groups.yaml
 automation: !include automations.yaml
