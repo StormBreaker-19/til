@@ -1,0 +1,9 @@
+customize:
+    media_player.bathroom:
+      entity_picture: ''
+    media_player.deck:
+      entity_picture: ''
+    media_player.lounge:
+      entity_picture: ''
+    sensor.entryway_thermostat_temperature:
+      friendly_name: Nest
