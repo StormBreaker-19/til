@@ -25,3 +25,5 @@
 12. `fastboot reboot-bootloader` 
 
 13. `fastboot -w update [image file].zip` 
+
+14. `fastboot flashing lock` to relock the bootloader (required for Google Pay)
