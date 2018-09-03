@@ -4,7 +4,7 @@
 
 2. Download latest image: https://developer.android.com/preview/download.html and unzip. 
 
-3. Put phone in developer mode (tap build number 5 times) and turn on ‘OEM Unlocking’ and ‘USB Debugging’ and plug in. 
+3. Enable Developer Mode (tap build number 5 times) and turn on 'OEM Unlocking' and 'USB Debugging' and plug in. 
 
 4. `adb devices` to check it’s connected 
 
@@ -26,4 +26,8 @@
 
 13. `fastboot -w update [image file].zip` 
 
-14. `fastboot flashing lock` to relock the bootloader (required for Google Pay)
+14. Start phone up. Skip everything. 
+
+15. Enable Developer Mode, again. 
+
+16. `fastboot flashing lock` to relock the bootloader (required for Google Pay)
